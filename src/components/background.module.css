@@ -1,3 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    /* gap: 10px; */
+    background: #651fff;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
 }
@@ -14,7 +24,4 @@
 }
 
 @media (prefers-color-scheme: dark) {
-}
-
-@keyframes rotate {
 }
