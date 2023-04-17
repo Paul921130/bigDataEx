@@ -10,7 +10,7 @@ const initStore: { dispatch?: any; testing?: boolean } = {
 };
 const ContextStore = createContext(initStore);
 
-const reducer = (state, action) => {
+const reducer = (state:any, action:any) => {
   switch (action.type) {
     case "SET_ACCEPT_TESTING":
       return Object.assign({}, state, { testing: action.payload.testing });
@@ -19,7 +19,7 @@ const reducer = (state, action) => {
   }
 };
 
-const WrapContext = (props) => {
+const WrapContext = (props:any) => {
   const [stores, dispatch] = useReducer(reducer, initStore);
   return (
     <ContextStore.Provider
